@@ -1,5 +1,5 @@
 {
-  "name": "1-Passport-Example",
+  "name": "swapaid-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,7 +11,7 @@
     "watch": "nodemon server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jose Medina, Johnny Camargo, Mike Masrieh and Enid Soto",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "2.4.3",
