@@ -1,0 +1,208 @@
+body > div.logo > nav {
+  width: 650px;
+  margin-left: 225px;
+  margin-top: -115px;
+  height: 30px;
+}
+
+.choiceDisplay {
+  margin-left: 15px;
+}
+
+#pimgMain {
+  width: 79px;
+  height: 79px;
+  margin-left: 6px;
+  border-radius: 9px;
+  border: black double 1px;
+}
+
+/* .choiceDisplay {
+  border-top-left-radius: 199%;
+  border-bottom-right-radius: 45%;
+  background-color: hsl(180, 100%, 25%, 0.3);
+} */
+#space {
+  height: 20px;
+}
+
+.PL {
+  border-top-right-radius: 89%;
+  font-size: smaller;
+  text-align: left;
+  font-family: fantasy;
+  height: 15px;
+
+  background-color: hsla(9, 100%, 64%, 0.4);
+}
+.PT {
+}
+.PD {
+}
+
+#CD {
+  margin-left: 61px;
+  margin-top: 38px;
+}
+
+.pt1 {
+  background-color: none;
+}
+
+.frame {
+  margin-top: 2px;
+  height: 85px;
+  border-radius: 12px;
+
+  background-color: hsl(271, 76%, 53%, 0.07);
+  border-bottom-right-radius: 99%;
+}
+
+#logospecs {
+  height: 200px;
+}
+
+.MI {
+  margin-left: -22px;
+  margin-top: -15px;
+}
+
+#h55 {
+  margin-left: 450px;
+  font-size: small;
+}
+
+#specs {
+  cursor: pointer;
+  color: rgb(126, 87, 255);
+  font-size: 12px;
+}
+#trade {
+  cursor: pointer;
+  color: rgb(107, 68, 236);
+  font-size: 12px;
+}
+#delivery {
+  cursor: pointer;
+  color: rgb(77, 41, 198);
+  font-size: 12px;
+}
+
+#specs:hover {
+  color: rgb(79, 66, 123);
+  font-size: small;
+}
+#trade:hover {
+  color: rgb(101, 86, 152);
+  font-size: small;
+}
+#delivery:hover {
+  color: rgb(128, 101, 220);
+  font-size: small;
+}
+
+body > div.container > div.col-12P.S {
+  margin-left: 350px;
+}
+
+/* PRODUCT TITLE */
+body
+  > div.container
+  > div.row.product
+  > div.col-8.MI
+  > div.col-6.frame
+  > div:nth-child(1) {
+  margin-top: 5.5px;
+}
+
+#TG {
+  margin-left: -6px;
+}
+
+/* PRODUCT DESCRIPTION */
+body
+  > div.container
+  > div.row.product
+  > div.col-8.MI
+  > div.col-6.frame
+  > div:nth-child(2) {
+  margin-top: -4px;
+}
+
+.AccId {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: -31px;
+  margin-left: 45px;
+}
+
+#AI {
+  border-radius: 99%;
+  margin-left: 30px;
+  margin-top: -19px;
+  border: solid 3px rebeccapurple;
+  float: left;
+  height: 60px;
+  width: 60px;
+}
+
+.a12 {
+  float: left;
+}
+#traderID {
+  margin-left: 350px;
+  margin-top: 4px;
+  font-size: smaller;
+}
+
+.IR {
+  border-radius: 3%;
+  background-color: hsl(249, 81%, 58%, 0.035);
+
+  overflow-y: scroll;
+}
+
+.IR2 {
+  border-radius: 3%;
+  background-color: hsl(249, 81%, 58%, 0.035);
+
+  overflow-y: scroll;
+}
+
+/* SPECS ATTRIBUTES POPULATED */
+#lispec {
+  float: left;
+}
+
+#CI {
+  margin-left: 200px;
+  display: block;
+}
+#PRI {
+  margin-left: 200px;
+  display: block;
+}
+#SRI {
+  margin-left: 200px;
+  display: block;
+}
+#WRI {
+  margin-left: 200px;
+  display: block;
+}
+
+#OL {
+  margin-left: -35px;
+  list-style-type: none;
+}
+.SP {
+  border-radius: 2%;
+  border: solid 6px hsl(249, 81%, 58%, 0.07);
+  height: 150px;
+}
+
+#specsclicked {
+  font-size: x-large;
+  color: darkblue;
+}
