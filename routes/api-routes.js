@@ -34,12 +34,14 @@ module.exports = function(app) {
   app.post("/api/signup", function(req, res) {
     db.User.create({
       email: req.body.email,
-      password: req.body.password
+      password: req.body.password,
+      name: req.body.name
     })
       .then(function() {
         res.redirect(307, "/api/login");
       })
       .catch(function(err) {
+        console.log(err)
         res.status(401).json(err);
       });
   });
@@ -47,7 +49,7 @@ module.exports = function(app) {
   // Route for logging user out
   app.get("/logout", function(req, res) {
     req.logout();
-    res.redirect("/");
+    res.redirect("/landing");
   });
 
   // Route for getting some data about our user to be used client side

@@ -2,3 +2,73 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+html, body{
+  padding-top: 20px;
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: rgb(23,162,184);
+  background: linear-gradient(180deg, rgba(23,162,184,1) 0%, rgba(127,45,189,1) 100%);
+}  
+
+h1, h3, h5 {
+  color: white;
+}
+
+h5 {
+  font-style: italic;
+}
+  
+.card {
+  height: 370px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 400px;
+  background-color: rgba(0,0,0,0.5) !important;
+}
+  
+.card-header h3 {
+  color: white;
+}
+  
+.input-group-prepend span {
+  width: 50px;
+  background-color: #0a94e3;
+  color: black;
+  border:0 !important;
+}
+  
+input:focus {
+  outline: 0 0 0 0  !important;
+  box-shadow: 0 0 0 0 !important;    
+}
+  
+.remember {
+  color: white;
+}
+  
+.remember input {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+  margin-right: 5px;
+}
+  
+.login_btn {
+  color: black;
+  background-color: #0a94e3;
+  width: 100px;
+}
+  
+.login_btn:hover {
+  color: black;
+  background-color: white;
+}
+  
+.links {
+  color: white;
+}
+  
+.links a {
+  margin-left: 4px;
+}
