@@ -81,6 +81,26 @@ input:focus {
   margin-left: 4px;
 }
 
+
+
+
+
+
+.orange {
+  color:  #E04D3C;
+}
+
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+#jumbo {
+  background-color: #E04D3C;
+  color: white;
+}
 #bottom {
   background-color: #d4e5eb;
 }
