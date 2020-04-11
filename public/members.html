@@ -2,27 +2,44 @@
 <html lang="en">
 
 <head>
-  <title>Passport Authentication</title>
+  <title>Welcome to SwapAid - Upload or Trade here!</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css">
+  <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  
   <link href="stylesheets/style.css" rel="stylesheet">
+  <!-- <link href="stylesheets/debug.css" rel="stylesheet"> -->
 </head>
 
 <body>
-  <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/logout">
-        Logout
-      </a>
-    </div>
-  </div>
-</nav>
+  <nav class="nav justify-content-end border-bottom mb-4">
+    <a class="navbar-brand" href="/logout">Logout</a>
+  </nav>
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+        <img src="assets/images/swapAid_logo_color_150x150.png" class="mx-auto d-block mb-4" width="150px" alt="swapAid Logo">
+        <h2 class="text-center">Welcome <span class="member-name"></span>!</h2>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-xs">
+        <img src="assets/images/swapAid-welcome_img.png" class="mx-auto d-block" width="100%" alt="swapAid hero image">
+      </div>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-3 offset-md-3">
+        <a class="btn btn-info btn-lg mb-4" href="upload-item.html" role="button">Upload Item</a>
+      </div>
+      <div class="col-md-3">
+        <a class="btn btn-primary btn-lg mb-4" href="#" role="button">Browse Trades</a>
       </div>
     </div>
   </div>
