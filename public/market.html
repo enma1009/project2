@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -11,22 +10,38 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
 
-    <title>swapAid Dashboard</title>
+    <title>swapAid Market Dashboard</title>
   </head>
   <body>
     <div class="container">      
       <div class="row">
-        <img src="assets/images/swapAid_logo_color_150x150.png" width="100px">
+        <div class="col-sm">
+          <img src="assets/swapAid_logo_color_150x150.png" width="100px">
+        </div>        
       </div> 
       <div class="row">
-        <h1 class="font-blue">Your Dashboard</h1>
+        <div class="col-sm">
+          <h2 class="font-purple">Trading Market</h2>
+        </div>         
       </div>   
-      <hr> 
-      <div class="row" >
-        <h3 class="font-purple"> Items you added to trade</h3>
-      </div>   
+      <div class="row-purple">
+        <div class="col-sm">
+          <h4 class="white-background">Find trades you want to make with other users. You can filter items by category.</h3>
+        </div>        
+      </div>
       <div class="row">
         <div class="col-sm">
+          <h4>Categories</h4>
+        </div>
+      </div>     
+      <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-secondary">All Items</button>
+        <button type="button" class="btn btn-secondary">Food</button>
+        <button type="button" class="btn btn-secondary">Medicine</button>
+        <button type="button" class="btn btn-secondary">Supplies</button>
+      </div>
+      <div class="row">
+        <div class="offset-1 col-sm">
           <img src="assets/images/image_box.png" width="200px">
         </div>
         <div class="col-sm">
@@ -34,39 +49,31 @@
         </div>
         <div class="col-sm">
           <img src="assets/images/image_box.png" width="200px">
+        </div>               
+      </div>  
+      <div class="row">
+        <div class="offset-1 col-sm">
+          <img src="assets/images/image_box.png" width="200px">
         </div>
         <div class="col-sm">
           <img src="assets/images/image_box.png" width="200px">
-        </div>        
-      </div>        
+        </div>
+        <div class="col-sm">
+          <img src="assets/images/image_box.png" width="200px">
+        </div>               
+      </div> 
+      <div class="row">
+        <div class="offset-1 col-sm">
+          <img src="assets/images/image_box.png" width="200px">
+        </div>
+        <div class="col-sm">
+          <img src="assets/images/image_box.png" width="200px">
+        </div>
+        <div class="col-sm">
+          <img src="assets/images/image_box.png" width="200px">
+        </div>               
+      </div>       
     </div>
-     
-    <div class="container" id="bottom">
-      <hr>  
-        <div class="row">
-          <h3 class="font-purple">Trade Requests</h3>
-        </div>
-
-        <div class="row align-items-center">
-          <div class="col-sm">
-            <img src="assets/images/image_box.png" width="200px">  
-            <svg class="bi bi-arrow-left-right" width="50px" height="50px" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M10.146 7.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 11l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"/>
-              <path fill-rule="evenodd" d="M2 11a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 11zm3.854-9.354a.5.5 0 010 .708L3.207 5l2.647 2.646a.5.5 0 11-.708.708l-3-3a.5.5 0 010-.708l3-3a.5.5 0 01.708 0z" clip-rule="evenodd"/>
-              <path fill-rule="evenodd" d="M2.5 5a.5.5 0 01.5-.5h10.5a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clip-rule="evenodd"/>
-            </svg>
-          </div>
-          <div class="col-sm">
-            <img src="assets/images/image_box.png" width="200px">
-          </div>
-          <div class="col-sm">
-            <button type="button" class="btn btn-info btn-lg">Accept Trade</button>
-          </div>
-          <div class="col-sm">
-            <button type="button" class="btn btn-danger btn-lg">Decline Trade</button>
-          </div>
-        </div>   
-    </div>    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

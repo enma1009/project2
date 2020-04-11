@@ -99,3 +99,102 @@ input:focus {
   background-color: #E04D3C;
   color: white;
 }
+#bottom {
+  background-color: #d4e5eb;
+}
+
+.row-purple {
+  background-color: #77469b;
+}
+
+.white-background {
+  color: white;
+}
+
+.font-purple {
+  color: #77469b;
+}
+
+.btn-secondary {
+  background-color: #c8e4f7;
+  color: black;
+}
+
+.font-blue {
+  color: #15a2b9;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* MAKE OFFER PART  */
+
+#logospecs {
+  width: 69px;
+  height: 69px;
+}
+
+body > div > div:nth-child(6) > div.col-sm-4.PC {
+  margin-left: 10px;
+}
+
+/* PRODUCT CATEGORY  */
+.PC {
+  margin-left: 10px;
+  border-radius: 9%;
+  height: 250px;
+  width: 325px;
+  border: black 1px solid;
+}
+
+/* IMAGE PRDUCT */
+.IP {
+  height: 200px;
+  width: 200px;
+  display: block;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* GUEST ID */
+.ID {
+  margin-left: 35px;
+}
+
+/* ITEM TITLE */
+.ITT {
+  color: #15a2b9;
+}
+
+.PCA {
+  border-radius: 2%;
+  background-color: rgb(255, 255, 255);
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+  border: black 1px solid;
+  padding: 10px;
+  float: left;
+}
+.PCA:hover {
+  background-color: white;
+  margin: 10px;
+  height: 250px;
+  width: 250px;
+  border: #77469b 10px solid;
+  padding: 10px;
+  float: left;
+}
+
+.PP {
+  border-radius: 2%;
+  background-color: #d9cfe6;
+}
+
+.B1 {
+  background-color: #77469b;
+}
+
