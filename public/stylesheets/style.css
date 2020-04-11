@@ -80,3 +80,22 @@ input:focus {
 .links a {
   margin-left: 4px;
 }
+
+
+
+
+
+
+
+
+
+.fleft {
+  float: left;
+}
+.fright {
+  float: right;
+}
+#jumbo {
+  background-color: #E04D3C;
+  color: white;
+}
