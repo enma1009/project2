@@ -80,3 +80,33 @@ input:focus {
 .links a {
   margin-left: 4px;
 }
+
+#bottom {
+  background-color: #d4e5eb;
+}
+
+.row-purple {
+  background-color: #77469b;
+}
+
+.white-background {
+  color: white;
+}
+
+.font-purple {
+  color: #77469b;
+}
+
+.btn-secondary {
+  background-color: #c8e4f7;
+  color: black;
+}
+
+.font-blue {
+  color: #15a2b9;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
