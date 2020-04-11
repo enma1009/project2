@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SwapAid - Upload an item to trade</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  
+  <link href="stylesheets/style.css" rel="stylesheet">
+  <!-- <link href="stylesheets/debug.css" rel="stylesheet"> -->
+</head>
+
+<body>
+  <nav class="nav justify-content-end border-bottom mb-4">
+    <a class="navbar-brand" href="/logout">Logout</a>
+  </nav>
+  <div class="container">
+    <img src="assets/images/swapAid_logo_color_150x150.png" class="mb-2" width="75px" alt="swapAid Logo">
+    <h1 class="text-info">Upload an item to trade</h1>
+      <form id="submitItemForm" action="/api/newItem" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <input type="text" class="d-none" id="currentUserId" name="currentUserId" placeholder="currentUserId">
+        <label for="item_title">Enter the item's title:</label>
+        <input type="text" class="form-control" id="item_title" name="title" placeholder="Title">
+      </div>
+      <div class="form-group">
+        <label for="item_category">Select a category</label>
+        <select class="form-control" id="item_category" name="category">
+          <option>Food</option>
+          <option>Medicine</option>
+          <option>Supplies</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="item_description">Add a description:</label>
+        <textarea class="form-control" id="item_description" name="description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="myfile">Upload an image:</label>
+        <input type="file" id="uploadImg" name="imgFile">
+      </div>   
+      <button type="submit" class="btn btn-primary mb-4">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/addItem.js"></script>
+
+</body>
+
+</html>

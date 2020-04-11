@@ -60,10 +60,55 @@ module.exports = function(app) {
     } else {
       // Otherwise send back the user's email and id
       // Sending back a password, even a hashed password, isn't a good idea
-      res.json({
-        email: req.user.email,
-        id: req.user.id
+      db.User.findAll({
+        where: req.user.id
+      }).then(function(data) {
+        res.json({
+          email: data[0].dataValues.email,
+          id: data[0].dataValues.id,
+          name: data[0].dataValues.name
+        });
       });
     }
   });
+
+  app.post("/api/newItem", function(req, res) {
+
+    console.log(req.body);
+    if (!req.files || Object.keys(req.files).length === 0) {
+      return res.status(400).send('No files were uploaded.');
+    }
+    
+    // The name of the input field (i.e. "sampleFile") is used to retrieve the uploaded file
+    let imgFile = req.files.imgFile;
+    let imageName = imgFile.name;
+    
+    // Use the mv() method to place the file somewhere on your server
+    console.log(req.body.currentUserId);
+
+    imgFile.mv(__dirname + '/../public/assets/db_images/' + imageName, function(err) {
+      if (err)
+        return res.status(500).send(err);
+      //res.send('File uploaded!');
+    });
+
+    db.Item.create({
+      title: req.body.title,
+      itemDescription: req.body.description,
+      itemCategory: req.body.category,
+      imgName: imageName,
+      UserId: req.body.currentUserId
+    })
+      .then(function(data) {
+        console.log(data);
+        res.redirect("/dashboard");
+      })
+      .catch(function(err) {
+        console.log(err)
+        res.status(401).json(err);
+      });
+   
+   // res.send("Data saved");
+  });
+
 };
