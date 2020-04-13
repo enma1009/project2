@@ -7,66 +7,67 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="styles.css" />
- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-  integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
- <title>Hello, world!</title>
+ <!-- Font Awesome -->
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+ 
+ <link href="stylesheets/style.css" rel="stylesheet">
+ <!-- <link href="stylesheets/debug.css" rel="stylesheet"> -->
+
+ <title>Make an offer</title>
 </head>
 
 <body>
-
-
-  <div class="container">
-<div class="col-12 logo"><img id="logospecs"src="Images/swapAid_logo_color_150x150.png" alt=""></div>
-
-<br>
-
-<div class="col-12"><h6> <a href="#"> < Back to Trade Market </a></div>
-<div class="col-12"><h1> Make an offer <h1></div>
-
-  <br>
-
-
-
-   <div class="row">
-    <div class="col-4-sm PC"><img class="IP" src="Images/purell.webp" alt=""></div>
-    <div class="col-6-sm ID" ><div class="row"><h4 class="ITT">Item Title</h4></div><div class="row">
-      <h4 class="user"><p>Updated by  <span id="userid">Mr.rObOt099949</span></h4>
-    </div></div>
-   
-   </div>
-
-   <br>
-
-<div class=" container1 PP">
-  <div class-9>Select an item you want to offer from your uploads<span>  </span><button type="button" class="btn btn-primary button" data-toggle="button" aria-pressed="false" autocomplete="off">
-   Send Trade Request
-  </button></div>
-
-  <div class="row">
-   <div class="col-3-sm PCA">
-    <div class="col-sm-3"><img class="IP" src="Images/7410336b59fa5b4a86ac62104c5c0074_large.png" alt=""></div>
-   </div>
-   <div class="col-3-sm PCA">
-  <div class="col-sm-3 "><img class="IP" src="Images/b06ae55a40d6f27e6ee10c67492d477d0dd3bc37.png" alt=""></div>
-   </div>
-   <div class="col-3-sm PCA">
-  <div class="col-sm-3"><img class="IP" src="Images/12422_Prime_Aid_Benadryl_Pack_2_A_dfe12484-3522-4b10-89f5-9f6114ce5bbd_600x.webp" alt=""></div>
-   </div>
+  <div class="container-fluid border-bottom mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="/logout">Logout</a>
+    </div>
   </div>
+  
+  <div class="container mb-4">
+    <img src="assets\images\swapAid_logo_color_150x150.png" width="150px" class="mb-2">
+    <h1 class="font-purple"> Make an offer</h1>
+    <a href="market.html" class="mb-4"><i class="fas fa-angle-left"></i> Return to Trade Market</a>
   </div>
- </div>
 
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-sm-2">
+          <img class="img-thumbnail" src="assets/db_images/campbellsoup-demo.jpg" width="100%" alt="Chicken Noodle Soup">
+        </div>
+        <div class="col-sm-10" >
+          <h4 class="ITT">Item you wish to get:</h4>
+          <p class="lead">Chicken Noodle Soup</p>
+          <p>Offered by Mike</p>
+        </div>
+      </div>
+  </div>
 
- <!-- Optional JavaScript -->
- <!-- jQuery first, then Popper.js, then Bootstrap JS -->
- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   <div class="container-fluid PP pt-3">
+    <div class="container">
+      <h2 class="font-purple">Select an item you want to offer from your uploads</h2>
+      <!-- <button type="button" class="btn btn-primary button mb-2">Send Trade Request</button> -->
+
+      <div class="row">
+        <div class="col-3-sm PCA">
+         <a href="trade-request-sent.html"><img class="IP" src="assets/db_images/aspirin-bottle.png" alt=""></a>
+        </div>
+        <div class="col-3-sm PCA">
+          <a href="trade-request-sent.html"><img class="IP" src="assets/db_images/bananas.jpeg" alt=""></a>
+        </div>
+        <div class="col-3-sm PCA">
+          <a href="trade-request-sent.html"><img class="IP" src="assets/db_images/two-pears-on-a-table.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 </body>
 
 </html>

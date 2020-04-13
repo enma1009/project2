@@ -5,7 +5,7 @@ body {
 
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .gradient_bgrd {
@@ -19,8 +19,48 @@ form.login {
   background: linear-gradient(180deg, rgba(23,162,184,1) 0%, rgba(127,45,189,1) 100%);
 }  
 
-h1, h3, h5 {
+.mb-4 {
+  padding-top: 20px;
+}
+
+h1, h2, h3, h5, label {
   color: white;
+  font-size: 20px;
+} 
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+.img-center {
+  margin: 0 auto;
+}
+
+.container-logos {
+  background-color: #f4f9fd;   
+  border-radius: 20px;
+}
+
+.logo-text {
+  color: #7329b2;  
+}
+
+.sign-up {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.btn-default {
+  color: white;
+  font-size: 25px;
+}
+
+.white {
+  color: white;
+  font-style: italic;
 }
 
 h5 {
@@ -95,7 +135,6 @@ input:focus {
 .orange {
   color:  #E04D3C;
 }
-
 
 .fleft {
   float: left;

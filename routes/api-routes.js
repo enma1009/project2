@@ -72,6 +72,18 @@ module.exports = function(app) {
     }
   });
 
+  app.get("/api/items_data", function(req, res) {
+
+    //console.log(req.user.id);
+      db.Item.findAll({
+        where: {
+          UserId: req.user.id
+        }  
+      }).then(function(data) {
+        res.json(data);
+      });  
+  });
+
   app.post("/api/newItem", function(req, res) {
 
     console.log(req.body);
