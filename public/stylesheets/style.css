@@ -82,9 +82,15 @@ input:focus {
 }
 
 
-
-
-
+.center {
+  text-align: center;
+}
+.round {
+  border-radius: 50%;
+}
+.background {
+  background-color: #F0F8FF;
+}
 
 .orange {
   color:  #E04D3C;
