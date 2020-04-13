@@ -19,9 +19,11 @@
 </head>
 
 <body>
-  <nav class="nav justify-content-end border-bottom mb-4">
-    <a class="navbar-brand" href="/logout">Logout</a>
-  </nav>
+  <div class="container-fluid border-bottom mb-4">
+    <div class="container">
+      <a class="navbar-brand" href="/logout">Logout</a>
+    </div>
+  </div>
   <div class="container">
     <img src="assets/images/swapAid_logo_color_150x150.png" class="mb-2" width="75px" alt="swapAid Logo">
     <h1 class="text-info">Upload an item to trade</h1>
@@ -45,7 +47,7 @@
       </div>
       <div class="form-group">
         <label for="myfile">Upload an image:</label>
-        <input type="file" id="uploadImg" name="imgFile">
+        <input type="file" class="form-control-file" id="uploadImg" name="imgFile">
       </div>   
       <button type="submit" class="btn btn-primary mb-4">Submit</button>
     </form>
