@@ -5,7 +5,7 @@ body {
 
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .gradient_bgrd {
@@ -18,6 +18,54 @@ form.login {
   background: rgb(23,162,184);
   background: linear-gradient(180deg, rgba(23,162,184,1) 0%, rgba(127,45,189,1) 100%);
 }  
+
+.mb-4 {
+  padding-top: 20px;
+}
+
+h1, h2, h3, h5, label {
+  color: white;
+  font-size: 20px;
+} 
+
+p {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+}
+
+
+.img-center {
+  margin: 0 auto;
+}
+
+.container-logos {
+  background-color: #f4f9fd;   
+  border-radius: 20px;
+}
+
+.logo-text {
+  color: #7329b2;  
+}
+
+.sign-up {
+  font-size: 30px;
+  margin-top: 50px;
+}
+
+.btn-default {
+  color: white;
+  font-size: 25px;
+}
+
+.white {
+  color: white;
+  font-style: italic;
+}
+
+h5 {
+  font-style: italic;
+}
   
 .card {
   height: 370px;
@@ -72,6 +120,7 @@ input:focus {
 .links a {
   margin-left: 4px;
 }
+
 
 .orange {
   color:  #E04D3C;
@@ -163,7 +212,7 @@ body > div > div:nth-child(6) > div.col-sm-4.PC {
   margin: 10px;
   height: 250px;
   width: 250px;
-  /* border: black 1px solid; */
+  border: black 1px solid;
   padding: 10px;
   float: left;
 }
@@ -178,7 +227,7 @@ body > div > div:nth-child(6) > div.col-sm-4.PC {
 }
 
 .PP {
-  /* border-radius: 2%; */
+  border-radius: 2%;
   background-color: #d9cfe6;
 }
 
@@ -186,12 +235,3 @@ body > div > div:nth-child(6) > div.col-sm-4.PC {
   background-color: #77469b;
 }
 
-.fa-arrows-alt-h {
-  text-align:center;
-  display: inline-block; 
-  width: 100%;
-}
-
-.yellow_bgrd {
-  background-color: #FBAE5B;
-}
