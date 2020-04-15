@@ -19,20 +19,20 @@ form.login {
   background: linear-gradient(180deg, rgba(23,162,184,1) 0%, rgba(127,45,189,1) 100%);
 }  
 
-.mb-4 {
+/* .mb-4 {
   padding-top: 20px;
-}
+} */
 
-h1, h2, h3, h5, label {
+/* h1, h2, h3, h5, label {
   color: white;
   font-size: 20px;
-} 
+}  */
 
-p {
+/* p {
   text-align: center;
   color: white;
   font-size: 20px;
-}
+} */
 
 
 .img-center {
@@ -63,9 +63,9 @@ p {
   font-style: italic;
 }
 
-h5 {
+/* h5 {
   font-style: italic;
-}
+} */
   
 .card {
   height: 370px;
@@ -171,10 +171,10 @@ input:focus {
   color: #15a2b9;
 }
 
-hr {
+/* hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
+} */
 
 /* MAKE OFFER PART  */
 
@@ -222,7 +222,7 @@ body > div > div:nth-child(6) > div.col-sm-4.PC {
   margin: 10px;
   height: 250px;
   width: 250px;
-  border: black 1px solid;
+  /* border: black 1px solid; */
   padding: 10px;
   float: left;
 }
@@ -237,7 +237,7 @@ body > div > div:nth-child(6) > div.col-sm-4.PC {
 }
 
 .PP {
-  border-radius: 2%;
+  /* border-radius: 2%; */
   background-color: #d9cfe6;
 }
 
@@ -245,3 +245,6 @@ body > div > div:nth-child(6) > div.col-sm-4.PC {
   background-color: #77469b;
 }
 
+.yellow_bgrd {
+  background-color: #ffaf59;
+}

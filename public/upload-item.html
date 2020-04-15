@@ -19,11 +19,29 @@
 </head>
 
 <body>
-  <div class="container-fluid border-bottom mb-4">
+  
+  <div class="container-fluid border-bottom mb-4"> <!-- site navigation -->
     <div class="container">
-      <a class="navbar-brand" href="/logout">Logout</a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/members">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="/upload-item">Upload Item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/market">Trade Market</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/trading-dashboard">Your Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="/logout">Logout</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </div> <!-- end of site navigation -->
+
   <div class="container">
     <img src="assets/images/swapAid_logo_color_150x150.png" class="mb-2" width="75px" alt="swapAid Logo">
     <h1 class="text-info">Upload an item to trade</h1>

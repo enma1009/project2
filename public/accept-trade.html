@@ -20,11 +20,29 @@
     <title>Trade Accepted!</title>
   </head>
   <body>
-    <div class="container-fluid border-bottom mb-4">
+    
+    <div class="container-fluid border-bottom mb-4"> <!-- site navigation -->
       <div class="container">
-        <a class="navbar-brand" href="/logout">Logout</a>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/members">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/upload-item">Upload Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/market">Trade Market</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/trading-dashboard">Your Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="/logout">Logout</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </div> <!-- end of site navigation -->
+
     <div class="container mb-4">
       <img src="assets\images\swapAid_logo_color_150x150.png" width="150px" class="mb-2">
       <h1 class="text-info">Awesome! You reached a deal</h1>
@@ -32,8 +50,8 @@
     </div>
 
     <div class="container">
-      <h3>Now it's time to coordinate the exchange in the real world</h3>
-      <div class="alert alert-info" role="alert">
+      <h3 class="form">Now it's time to coordinate the exchange in the real world</h3>
+      <div class="alert alert-info form" role="alert">
         
         <form>
           <div class="form-group">
@@ -46,10 +64,10 @@
       </div>
 
       <div class="alert alert-light d-none msgSent" role="alert">
-        Your message was sent. Want to do more trades? Visit the <a href="market.html">trading market.</a>
+        Your message was sent. Want to do more trades? Visit the <a href="/market">trading market.</a>
       </div>
 
-      <a href="members.html" class="mb-4"><i class="fas fa-angle-left"></i> Return Home</a>
+      <a href="/trading-dashboard-demo" class="mb-4"><i class="fas fa-angle-left"></i> Return to your Dashboard</a>
     </div>
     
    
@@ -59,6 +77,7 @@
       $(".sendMsg").on("click", function(e){
         e.preventDefault();
         $(".msgSent").removeClass("d-none");
+        $(".form").addClass("d-none");
       })
     </script>
     

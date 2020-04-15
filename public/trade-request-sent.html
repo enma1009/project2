@@ -20,11 +20,29 @@
     <title>Your Trade Request was sent!</title>
   </head>
   <body>
-    <div class="container-fluid border-bottom mb-4">
+    
+    <div class="container-fluid border-bottom mb-4"> <!-- site navigation -->
       <div class="container">
-        <a class="navbar-brand" href="/logout">Logout</a>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link" href="/members">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/upload-item">Upload Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/market">Trade Market</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/trading-dashboard">Your Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link font-weight-bold" href="/logout">Logout</a>
+          </li>
+        </ul>
       </div>
-    </div>
+    </div> <!-- end of site navigation -->
+
     <div class="container mb-4">
       <img src="assets\images\swapAid_logo_color_150x150.png" width="150px" class="mb-2">
       <h1 class="orange">Congrats! Your Trade Request was sent</h1>
@@ -33,7 +51,7 @@
 
     <div class="container">
       <div class="alert alert-info" role="alert">
-        <i class="fas fa-check-circle"></i> A trade proposal was sent to Mike. Check your <a href="trading-dashboard.html">trading dashboard</a> for a reply. 
+        <i class="fas fa-check-circle"></i> A trade proposal was sent to Mike. Check your <a href="/trading-dashboard">trading dashboard</a> for a reply. 
       </div>
     </div>
     

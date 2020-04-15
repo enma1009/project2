@@ -19,11 +19,28 @@
 </head>
 
 <body>
-  <div class="container-fluid border-bottom mb-4">
+  <div class="container-fluid border-bottom mb-4"> <!-- site navigation -->
     <div class="container">
-      <a class="navbar-brand" href="/logout">Logout</a>
+      <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link disabled" href="/members">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/upload-item">Upload Item</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/market">Trade Market</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/trading-dashboard">Your Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link font-weight-bold" href="/logout">Logout</a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </div> <!-- end of site navigation -->
+  
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-6 col-md-offset-3">
@@ -38,13 +55,13 @@
     </div>
     <div class="row text-center">
       <div class="col-md-3 offset-md-1">
-        <a class="btn btn-info mb-4" href="upload-item.html" role="button">Upload Item</a>
+        <a class="btn btn-info btn-lg" href="upload-item.html" role="button">Upload Item</a>
       </div>
       <div class="col-md-4">
-        <a class="btn btn-primary mb-4" href="market.html" role="button">Browse Trade Market</a>
+        <a class="btn btn-primary btn-lg" href="market.html" role="button">Browse Trade Market</a>
       </div>
       <div class="col-md-3">
-        <a class="btn btn-danger mb-4" href="trading-dashboard.html" role="button">Your Dashboard</a>
+        <a class="btn btn-danger btn-lg" href="trading-dashboard.html" role="button">Your Dashboard</a>
       </div>
     </div>
   </div>
