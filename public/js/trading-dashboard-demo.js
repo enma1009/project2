@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    
+
     $.get("/api/user_data").then(function(data) {
 
         let userID = data.id;
@@ -22,6 +22,22 @@ $(document).ready(function() {
         });
     });
 
+    $("#readMsg").on('click', function(e){
+        e.preventDefault();
+        $("#readMsg").addClass("disabled");
+        $("#tradeDenied").removeClass("d-none");
+    })
+    
+    $("#closeMsg").on("click", function(e){
+        e.preventDefault();
+        $(".activeTradeRequests").addClass("d-none");
+        $(".noTradeRequests").removeClass("d-none");
+    })
 
-});
+    $("#markComplete").on("click", function(e){
+        e.preventDefault();
+        $("#markComplete").addClass("d-none");
+        $(".completedMsg").removeClass("d-none");
+    })
+  });
   

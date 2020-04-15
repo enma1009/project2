@@ -47,14 +47,14 @@
     </div>
 
     <div class="container-fluid" id="bottom">
-      <div class="container p-3">
+      <div class="container pt-3">
         <div class="row">
           <h3 class="font-purple pl-3">Incoming Trade Requests</h3>
         </div>
-        <div class="row d-none" id="noTradeRequests">
+        <div class="row" id="noTradeRequests">
           <p class="pl-3">There are no incoming trade requests at this moment.</p>
         </div>
-        <div class="row align-items-center" id="activeTradeRequests">
+        <div class="row align-items-center d-none" id="activeTradeRequests">
           <div class="col-6">
             <div class="row align-items-center">
               <div class="col-5">
@@ -79,10 +79,10 @@
         <div class="row">
           <h3 class="font-purple pl-3">Trades Sent</h3>
         </div>
-        <div class="row" id="noTradeRequests">
-          <p class="pl-3 d-none">You have not sent trade requests to anybody.</p>
+        <div class="row d-none noTradeRequests" id="noTradeRequests">
+          <p class="pl-3">You have no active sent trades at this time.</p>
         </div>
-        <div class="row align-items-center" id="activeTradeRequests">
+        <div class="row align-items-center activeTradeRequests" id="activeTradeRequests">
           <div class="col-6">
             <div class="row align-items-center">
               <div class="col-5">
@@ -97,7 +97,10 @@
             </div>  
           </div>
           <div class="col-6">
-            <a class="btn yellow_bgrd btn-lg" href="/read-message" role="button">Read Message</a>
+            <a class="btn yellow_bgrd btn-lg" id="readMsg" href="#" role="button">Read Message</a>
+          </div>
+          <div class="alert alert-danger mt-3 d-none" id="tradeDenied" role="alert">
+            <i class="fas fa-times-circle"></i> We are sorry to tell you that this trade was not accepted. Visit the trading market to find new trading opportunities. <a href="#" id="closeMsg" style="text-decoration: underline;">Close</a>
           </div>
         </div>   
       </div> 
@@ -110,8 +113,35 @@
         <div class="row" id="noTradeRequests">
           <p class="pl-3 d-none">You have not sent trade requests to anybody.</p>
         </div>
+        
         <div class="row align-items-center" id="activeTradeRequests">
-          <div class="col-6">
+          <div class="col-4">
+            <div class="row align-items-center">
+              <div class="col-5">
+                <img src="assets/db_images/strawberries.jpg"class="img-thumbnail" width="100%" alt="">
+              </div>
+              <div class="col-2">
+                <i class="fas fa-arrows-alt-h fa-3x font-blue"></i>
+              </div>
+              <div class="col-5">
+                <img src="assets/db_images/bountypt_supplies.jpg"class="img-thumbnail float-left" width="100%" alt="">
+              </div>
+            </div>  
+          </div>
+          <div class="col-8">
+            <p>You accepted this trade request.</p>
+            <div class="alert alert-light" role="alert">
+              <span class="font-weight-bold">Last message sent to user:</span><br>
+              Hi! Are you able to meet tomorrow?<br>
+              <em>Date Sent: April 14 @ 8pm.</em>
+            </div>
+          </div>
+        </div>   
+    
+         <hr class="border border-secondary">
+
+        <div class="row align-items-center" id="activeTradeRequests">
+          <div class="col-4">
             <div class="row align-items-center">
               <div class="col-5">
                 <img src="assets/db_images/ragusauce.jpg"class="img-thumbnail" width="100%" alt="">
@@ -124,8 +154,9 @@
               </div>
             </div>  
           </div>
-          <div class="col-6">
-            <a class="btn btn-info btn-lg" href="/mark-complete" role="button">Mark as Complete</a>
+          <div class="col-8">
+            <a class="btn btn-info btn-lg" href="#" id="markComplete" role="button">Mark as Complete</a>
+            <p class="completedMsg d-none">The trade was completed!</p>
           </div>
         </div>   
       </div> 
@@ -141,7 +172,7 @@
     </div>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/trading-dashboard.js"></script>
+    <script type="text/javascript" src="/js/trading-dashboard-demo.js"></script>
 
   </body>
 </html>
