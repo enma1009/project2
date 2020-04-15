@@ -40,5 +40,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "../public/trading-dashboard.html"));
   });
 
+  app.get("/:template", function(req, res) {
+    if (req.params.template !== "logout") {
+      res.sendFile(path.join(__dirname, `../public/${req.params.template}.html`));
+    } else {
+      req.logout();
+      res.sendFile(path.join(__dirname, `../public/landing.html`));
+    }
+  });
+
 };
 

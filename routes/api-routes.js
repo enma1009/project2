@@ -84,6 +84,18 @@ module.exports = function(app) {
       });  
   });
 
+  app.get("/api/item/:id", function(req, res) {
+
+    //console.log(req.user.id);
+      db.Item.findOne({
+        where: {
+          id: req.params.id
+        }  
+      }).then(function(data) {
+        res.json(data);
+      });  
+  });
+
   app.post("/api/newItem", function(req, res) {
 
     console.log(req.body);
